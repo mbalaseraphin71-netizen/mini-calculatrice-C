@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float a,b,som,m,s,d;
+   int i;
+    printf("MENU DES OPERATIONS\n");
+    printf("1 Addition\n");
+    printf("2 Soustraction\n");
+    printf("3 Multiplication\n");
+    printf("4 Division\n");
+    printf("entrer deux nombres nombre\n");
+    scanf("%f",&a);
+    scanf("%f",&b);
+    printf("entrez un nombre de 1 a 4\n");
+    scanf("%d",&i);
+    switch(i){
+        case 1:
+         printf("Addition\n");
+         som=a+b;
+         printf("la somme de ces deux nombres est:%f\n",som);
+         break;
+        case 2:
+            printf("Soustraction\n");
+            s=a-b;
+            printf("la soustraction de ces deux nombres vaut:%f\n",s);
+            break;
+        case 3:
+                printf("multiplication\n");
+                m=a*b;
+                printf("la multiplication de ces deux nombres vaut:%f\n",m);
+                break;
+         case 4:
+           printf("Division\n");
+           d=a/b;
+           printf("la division de ses deux nombres vaut:%f\n",d);
+           break;
+           default:
+            printf("Autres\n");
+    }
+         printf("Operation effectueE avec succes\n");
+
+    return 0;
+}
